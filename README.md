@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina 
-  <img src="readme-images/haribo_home" width="375px" alt="De homepagna van de Haribo website">
+  <img src="readme-images/haribo_home.png" width="375px" alt="De homepagna van de Haribo website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/haribo_producten.jpg" width="375px" alt="pagina waar alle Haribo producten te zien zijn">
+  <img src="readme-images/haribo_producten.png" width="375px" alt="pagina waar alle Haribo producten te zien zijn">
  
 </details>
 
