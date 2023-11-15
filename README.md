@@ -58,6 +58,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  Markup : * De HTML code heeft veel errors.
+           * De lijsten in de code zijn niet correct.
+           * De buttons worden aangesproken met een span.
+           * Support geen dark mode.
+           * Kan de text grootte niet aanpassen.
+           * De inlog knop wordt door de screenreeder niet erkend als link.
+
 </details>
 
 
