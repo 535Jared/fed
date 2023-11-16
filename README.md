@@ -65,7 +65,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   * Kan de text grootte niet aanpassen.
   * De inlog knop wordt door de screenreeder niet erkend als link.
 
-  [embed]file:///Users/jaredpenner/Library/CloudStorage/OneDrive-HvA/Jaar%202/FED/basiswebsite/readme-images/WCAG%20check%20primera.pdf[/embed]
+  <embed>file:///Users/jaredpenner/Library/CloudStorage/OneDrive-HvA/Jaar%202/FED/basiswebsite/readme-images/WCAG%20check%20primera.pdf</embed>
 </details>
 
 
