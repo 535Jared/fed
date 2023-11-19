@@ -63,9 +63,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   * De buttons worden aangesproken met een span.
   * Support geen dark mode.
   * Kan de text grootte niet aanpassen.
-  * De inlog knop wordt door de screenreeder niet erkend als link.
+  * De inlog knop wordt door de screenreeder niet erkend.
 
-  <embed src="readme-images/wcag_check_primera.pdf" type="pdf">
+  <a href="readme-images/wcag_check_primera.pdf">PDF van de WCAG checlist voor de site van primera.</a>
 
 </details>
 
@@ -77,7 +77,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown/breakdownschets_home.jpg" width="375px" alt="breakdown van de hele pagina">
+
+  ### de header: 
+  <img src="readme-images/breakdown/breakdownschets_home_header.jpg" width="375px" alt="breakdown van de header van de pagina">
+
+  ### de main: 
+  <img src="readme-images/breakdown/breakdownschets_home_main_1.jpg" width="375px" alt="breakdown van het eerste deel van de main">
+  <img src="readme-images/breakdown/breakdownschets_home_main_2.jpg" width="375px" alt="breakdown van het tweede deel van de main">
+
+  ### de header: 
+  <img src="readme-images/breakdown/breakdownschets_home_footer.jpg" width="375px" alt="breakdown van de footer van de pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
