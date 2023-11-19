@@ -43,7 +43,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/primera_home.jpeg" width="375px" alt="De homepagna van de Primera website.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Cadeaubox cadeaukaart met tony chocolonely
   <img src="readme-images/primera_product.png" width="375px" alt="Productpagina van Tony Chocolonly cadeaubox.">
  
 </details>
