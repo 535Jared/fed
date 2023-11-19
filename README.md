@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.primera.nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Home pagina 
+  Home pagina <br>
   <img src="readme-images/primera_home.jpeg" width="375px" alt="De homepagna van de Primera website.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Cadeaubox cadeaukaart met tony chocolonely
+  Cadeaubox cadeaukaart met tony chocolonely <br>
   <img src="readme-images/primera_product.png" width="375px" alt="Productpagina van Tony Chocolonly cadeaubox.">
  
 </details>
