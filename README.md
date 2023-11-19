@@ -65,7 +65,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   * Kan de text grootte niet aanpassen.
   * De inlog knop wordt door de screenreeder niet erkend.
 
-  <a href="readme-images/wcag_check_primera.pdf">PDF van de WCAG checlist voor de site van primera.</a>
+  <a href="readme-images/wcag_check_primera.pdf">Ingevulde WCAG checklist over de site van Primera.</a>
 
 </details>
 
@@ -83,10 +83,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/breakdown/breakdownschets_home_header.jpg" width="375px" alt="breakdown van de header van de pagina">
 
   ### de main: 
-  <img src="readme-images/breakdown/breakdownschets_home_main_1.jpg" width="375px" alt="breakdown van het eerste deel van de main">
+  <img src="readme-images/breakdown/breakdownschets_home_main_1.jpg" width="375px" alt="breakdown van het eerste deel van de main"><br>
   <img src="readme-images/breakdown/breakdownschets_home_main_2.jpg" width="375px" alt="breakdown van het tweede deel van de main">
 
-  ### de header: 
+  ### de footer: 
   <img src="readme-images/breakdown/breakdownschets_home_footer.jpg" width="375px" alt="breakdown van de footer van de pagina">
 
   ### dynamisch deel (bijv menu): 
