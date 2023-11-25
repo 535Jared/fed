@@ -32,24 +32,76 @@
     margin: 0;
 }
 
+
+
+
 /* header */
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    background-color: #2c4592;
-    padding: 1em;
-    font-weight: bold;
+header {
+  font-size: 0.8rem;
+  font-family: 'Circe-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-weight: 800;
+  line-height: 12px;
+  background-color: #2c4592;
 }
 
-nav a {
+
+header>a {
 	color: #fff;
 	text-decoration: none;
 }
+
+
+header img {
+  height: 27px;
+}
+
+
+header nav {
+  background: #e6e7ff;
+  position: fixed;
+  inset: 0; /* inset is links, rechts, boven en onder samen */
+  translate: 100% 0%; /* verschuift het menu uit beeld */
+}
+
+
+header nav.openMenu {
+  translate: 0 0;
+  transition: 0.3s;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 1em;
+  font-weight: bold;
+}
+
+
+form {
+  width: 100vw;
+  background: red;
+}
+
+form input {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  height: 45px;
+  padding: 9px 45px 7px 12px;
+  color: #454545;
+}
+
 
 
 
 /* body */
 body {
 	background-color: #fff;
+  font-family: 'Circe-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 1.5rem;
 }

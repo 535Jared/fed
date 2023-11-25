@@ -89,7 +89,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de footer: 
   <img src="readme-images/breakdown/breakdownschets_home_footer.jpg" width="375px" alt="breakdown van de footer van de pagina">
 
-  ### dynamisch deel (bijv menu): 
+  ### dynamisch deel (bijv menu): <!-- deze nog doen --> 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
@@ -109,24 +109,34 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  De content van de website in html zetten ging goed met behulp van de breakdown schets. De opdrachten waren handig 
+  om kennis weer een beetje op te halen. Verder heb ik de opdrachten opgeslagen zodat ik het later weer kan gebruiken.
+  Nu ik alle content heb ben ik van boven naar beneden bezig met het stijlen van de pagina.
+
+  Het ophalen van de afbeeldingen uit de Primera website lukte niet. De afbeeldingen stonden binnen de before en dan in de css maar kunnen nu wel opgehaald worden. Verder had ik nog wat vragen over de transities. Dit kan veelal met css opgelost worden. Het secondaire menu kan met translate verwijderen en verschijnen.
+
+  <img src="readme-images/ophalen_afbeeldingen.png" alt="screenshot van een geïnspecteerde afbeelding op de site van Primera">
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Jared                                                           | student 2          | student 3    | student 4        |
+  | ---                                                             | ---                | ---          | ---              |
+  | Kan een afbeelding in een form?                                 | ...                | ...          |                  |
+  | Kan ik het doorklikken in het menu ook met een transitie doen?  | ...                | ...          | ...              |
+  | Hoe kan ik deze afbeeldingen van de site halen?                 | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - De readme is goed ingevuld
+  - De code ziet er netjes uit
+  - Je kan een afbeelding zeker in de form zetten
+  - Net zoals je het menu laat verschijnen kan je ook een secundair menu verschijnen en verwijderen
+  - De afbeeldingen staan binnen een before en in de css, hieruit kan je ze halen
+  - Ik ben goed op weg
 
 </details>
 
@@ -248,7 +258,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+  1. https://css-tricks.com/almanac/properties/f/flex-direction/ over flex-direction
   2. bron 2
   3. ...
 
