@@ -107,11 +107,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-  De content van de website in html zetten ging goed met behulp van de breakdown schets. De opdrachten waren handig 
-  om kennis weer een beetje op te halen. Verder heb ik de opdrachten opgeslagen zodat ik het later weer kan gebruiken.
-  Nu ik alle content heb ben ik van boven naar beneden bezig met het stijlen van de pagina.
+  De content van de website in html zetten ging goed met behulp van de breakdown schets. De opdrachten waren handig om kennis weer een beetje op te halen. Verder heb ik de opdrachten opgeslagen zodat ik het later weer kan gebruiken. Nu ik alle content heb ben ik van boven naar beneden bezig met het stijlen van de pagina.
 
   Het ophalen van de afbeeldingen uit de Primera website lukte niet. De afbeeldingen stonden binnen de before en dan in de css maar kunnen nu wel opgehaald worden. Verder had ik nog wat vragen over de transities. Dit kan veelal met css opgelost worden. Het secondaire menu kan met translate verwijderen en verschijnen.
 
@@ -126,16 +123,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Kan een afbeelding in een form?                                 | ...                | ...          |                  |
   | Kan ik het doorklikken in het menu ook met een transitie doen?  | ...                | ...          | ...              |
   | Hoe kan ik deze afbeeldingen van de site halen?                 | ...                | ...          | ...              |
+  | Het geanimeerde in de header, is dat met een list?              | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - De readme is goed ingevuld
   - De code ziet er netjes uit
   - Je kan een afbeelding zeker in de form zetten
   - Net zoals je het menu laat verschijnen kan je ook een secundair menu verschijnen en verwijderen
   - De afbeeldingen staan binnen een before en in de css, hieruit kan je ze halen
+  - Ja het geanimeerde kan je doen met een list en dan met translate en animate kan je het laten animeren
   - Ik ben goed op weg
 
 </details>
@@ -152,6 +150,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Ik wilde dat de tekst en de knop in de grid op dezelfde hoogtte zaten dus gebruikte ik hiervoor align-items maar er veranderde niks.
+  <img src="/readme-images/code_grid_align.png" alt="screenshot van de code align-items">
+  <img src="/readme-images/site_grid_align.png" alt="screenshot van de tekst en button op de site">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -259,7 +260,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Vermeld de bronnen ook in je code.
 
   1. https://css-tricks.com/almanac/properties/f/flex-direction/ over flex-direction
-  2. bron 2
+  2. https://stackoverflow.com/questions/63179896/displaying-an-image-in-search-bar-html over image in form
   3. ...
 
 </details>
