@@ -151,8 +151,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
   Ik wilde dat de tekst en de knop in de grid op dezelfde hoogtte zaten dus gebruikte ik hiervoor align-items maar er veranderde niks.
-  <img src="/readme-images/code_grid_align.png" alt="screenshot van de code align-items">
-  <img src="/readme-images/site_grid_align.png" alt="screenshot van de tekst en button op de site">
+
+  <img src="/readme-images/code_grid_align.png" alt="screenshot van de code align-items" width="375px">
+  <img src="/readme-images/site_grid_align.png" alt="screenshot van de tekst en button op de site" width="375px">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
