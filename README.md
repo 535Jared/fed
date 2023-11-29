@@ -148,12 +148,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
   Ik wilde dat de tekst en de knop in de grid op dezelfde hoogtte zaten dus gebruikte ik hiervoor align-items maar er veranderde niks.
 
   <img src="/readme-images/code_grid_align.png" alt="screenshot van de code align-items" width="375px">
   <img src="/readme-images/site_grid_align.png" alt="screenshot van de tekst en button op de site" width="375px">
+
+
+  Om een icoontje in de zoekbalk te krijgen heb ik gebruikt gemaakt van een backgroundimage. Ik probeerde het eerst in de input te krijgen met flexbox maar dit werkte niet handig. Dus had ik opgezocht hoe anderen dit doen en kwam ik terecht bij Stackoverflow waar ik zag dat iemand het met een background image deed.
+
+  <img src="/readme-images/zoekbalk_image.png" alt="screenshot van de zoekbalk met een vergrootglas icon erin aan de rechterkant" width="375px">
+  <img src="/readme-images/zoekbalk_image_code.png" alt="screenshot van de code waar background image gebruikt voor het icon in de zoekbalk" width="375px">
+
+  Wanneer je het menu open klapte, stonden het woord menu en het kruisje boven aan de pagina niet op dezelfde hoogte. Het woord 'menu' stond meer naar onder. Dit wilde ik oplossen met een grid en dan align items. Dit deed echter niet veel dus had ik hulp gevraagd aan Demi die me als tip gaf om gebruik te maken van grid-area. Dit omdat deze code ervoor zorgt dat ik de elementen in de grid kan verplaatsen.
+
+  <img src="/readme-images/menu_kruis.png" alt="screenshot van het woord 'menu' en het kruisje in een grid op dezelfde hoogtte" width="375px">
+  <img src="/readme-images/menu_kruis_code.png" alt="screenshot van de code waar grid-area wordt gebruikt" width="375px">
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
