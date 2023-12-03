@@ -283,5 +283,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   1. https://css-tricks.com/almanac/properties/f/flex-direction/ over flex-direction
   2. https://stackoverflow.com/questions/63179896/displaying-an-image-in-search-bar-html over image in form
+  3. https://mastery.games/post/flexbox-order/ over flex order
+  4. https://css-tricks.com/snippets/css/complete-guide-grid/ over centreren in grid fraction
 
 </details>

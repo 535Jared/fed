@@ -15,7 +15,6 @@ function openmenufunction(){
    
 // Sluit menu
 var closemenu = document.querySelector("nav button");
-
 closemenu.onclick = closemenufunction;
 
 function closemenufunction(){
