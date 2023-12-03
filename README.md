@@ -158,28 +158,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="/readme-images/menu_kruis.png" alt="screenshot van het woord 'menu' en het kruisje in een grid op dezelfde hoogtte" width="375px">
   <img src="/readme-images/menu_kruis_code.png" alt="screenshot van de code waar grid-area wordt gebruikt" width="375px">
 
-  <br>
+  
   Om een icoontje in de zoekbalk te krijgen heb ik gebruikt gemaakt van een backgroundimage. Ik probeerde het eerst in de input te krijgen met flexbox maar dit werkte niet handig. Dus had ik opgezocht hoe anderen dit doen en kwam ik terecht bij Stackoverflow waar ik zag dat iemand het met een background image deed.
 
   <img src="/readme-images/zoekbalk_image.png" alt="screenshot van de zoekbalk met een vergrootglas icon erin aan de rechterkant" width="375px">
   <img src="/readme-images/zoekbalk_image_code.png" alt="screenshot van de code waar background image gebruikt voor het icon in de zoekbalk" width="375px">
 
-  <br>
+  
   Verder probeerde ik in de navigatie de tekst onder de icoontjes te zetten met flexbox. Maar ook de icons naast elkaar te zetten. Hiervoor gebruikte ik flex-direction column maar dan werden mijn icons verplaatst naar het midden en uitgerekt.
 
-  <img src="/readme-images/tekst_niet_onder_icon.png" alt="screenshot van iconen en tekst naast elkaar" width="300px">
-  <img src="/readme-images/text_icon_flex_mislukt.png" alt="screenshot van uitgerekte iconen in het midden van de pagina" width="300px">
-  <img src="/readme-images/text_icon_flex_code.png" alt="screenshot van de code waar flex en flex-direction wordt gebruikt" width="300px">
+  <img src="/readme-images/tekst_niet_onder_icon.png" alt="screenshot van iconen en tekst naast elkaar" width="375px">
+  <img src="/readme-images/text_icon_flex_mislukt.png" alt="screenshot van uitgerekte iconen in het midden van de pagina" width="375px">
+  <img src="/readme-images/text_icon_flex_code.png" alt="screenshot van de code waar flex en flex-direction wordt gebruikt" width="375px">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Jared                                                             | student 2          | student 3    | student 4        |
+  | ---                                                               | ---                | ---          | ---              |
+  | Hoe krijg ik de items bovenaan naast elkaar en de tekst onder de icons?                                 | ...                | ...          |                  |
+  | Bij het onderste deel van de header probeer ik de items naast elkaar te zetten en de tekts in een lange regel.   | ...                | ...          | ...              |
+  | Hoe zou ik een list scrollbaar kunnen maken?                  | ...                | ...          | ...              |
+  | Ik probeerde een tweede sectie aan te spreken maar het werkte niet, waarom?               | ...                | ...          | ...              |
+  | Hoe kan ik het beste tekst over een image doen i.p.v. translate? | ...                 | ...          | ...             |
 
 
   ### Verslag van meeting
@@ -279,6 +281,5 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   1. https://css-tricks.com/almanac/properties/f/flex-direction/ over flex-direction
   2. https://stackoverflow.com/questions/63179896/displaying-an-image-in-search-bar-html over image in form
-  3. ...
 
 </details>
