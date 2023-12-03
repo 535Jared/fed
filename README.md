@@ -12,7 +12,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Jij
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
@@ -32,7 +32,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Je website
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -144,7 +144,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -187,10 +187,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Voor de eerste vraag kan ik proberen de items in een list te zetten en deze met flex-direction naast elkaar te zetten.
+  - Tip: gerbuik liever em of rem dan px omdat deze beter werken met responsiveness.
+  - Voor de tweede vraag kan ik kijken of overflow: scroll en eventueel white-space: nowrap.
+  - Een list kun je scrollbaar maken met overflow: scroll.
+  - Ik gebruikte nth-child inplaats van nth-of-type. Dit werkte niet omdat het tweede kind een article was. Bij nth-of-type gaat hij echt op zoek naar het kind van hetzelfde type.
+  - Om tekst over een afbeelding te zetten kan je het best gebruik maken van position absolute. Omdat als je translate gebruikt, blijven deze elementen ook zichtbaar als je het menu opent.
 
 </details>
 
