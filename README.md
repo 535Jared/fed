@@ -233,7 +233,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   De lijst onder in mijn header moest als uitgestrekte regels naast elkaar staan. Dit wilde ik doen doormiddel van flex en felx-direction. Wanneer ik dit deed kwamen de list items wel naast elkaar te staan, maar de regels waren niet uitgestrekt. Demi zei dat ik dit kon proberen op te lossen met overflow scroll en evt. white-space nowrap dus heb ik dit geprobeerd. Om ze dan naast elkaar te krijgen heb ik gebruik gemaakt van een inline-block dat ervoor zorgt dat de list items niet zomaar meer verticale ruimte innemen.
 
-  <img src="/readme-images/list-header.png" alt="screenshot van list items naast elkaar gepropt" width="375px">
+  <img src="/readme-images/list_header.png" alt="screenshot van list items naast elkaar gepropt" width="375px">
   <img src="/readme-images/list_header_c.png" alt="screenshot van de code overflow, white-space en inline-block" width="375px">
   <img src="/readme-images/list_header_g.png" alt="screenshot van list items gestrekt naast elkaar" width="375px">
 
