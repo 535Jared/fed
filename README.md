@@ -233,9 +233,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   De lijst onder in mijn header moest als uitgestrekte regels naast elkaar staan. Dit wilde ik doen doormiddel van flex en felx-direction. Wanneer ik dit deed kwamen de list items wel naast elkaar te staan, maar de regels waren niet uitgestrekt. Demi zei dat ik dit kon proberen op te lossen met overflow scroll en evt. white-space nowrap dus heb ik dit geprobeerd. Om ze dan naast elkaar te krijgen heb ik gebruik gemaakt van een inline-block dat ervoor zorgt dat de list items niet zomaar meer verticale ruimte innemen.
 
-  <img src="/readme-images/topnavfout.png" alt="screenshot van list items naast elkaar gepropt" width="375px">
-  <img src="/readme-images/topnavcode.png" alt="screenshot van de code overflow, white-space en inline-block" width="375px">
-  <img src="/readme-images/topnavgoed.png" alt="screenshot van list items gestrekt naast elkaar" width="375px">
+  <img src="/readme-images/list-header.png" alt="screenshot van list items naast elkaar gepropt" width="375px">
+  <img src="/readme-images/list_header_c.png" alt="screenshot van de code overflow, white-space en inline-block" width="375px">
+  <img src="/readme-images/list_header_g.png" alt="screenshot van list items gestrekt naast elkaar" width="375px">
 
   Bij de cadeauzoeker wilde ik het icoontje van het vergrootglas naast de header zetten door middel van een grid. Op CSS tricks zag ik dat hier een manier voor was door de grid een soort van te schetsen. Hiervoor gaf ik eerst met grid-area elk onderdeel wat in de grid zit een eigen naam. Vervolgens heb ik in de sectie waar ik de grid heb geplaatst grid-template-areas gebruikt om de grid te 'schetsen'. Ik gaf een rij aan met aanhalingstekens en in elke column zette ik de naam van het element dat ik daar wilde hebben.
 
