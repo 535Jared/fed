@@ -144,7 +144,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2 (week 3)
 
-<details open>
+<details>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -216,11 +216,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het opmaken van de cadeaufolder sectie ging erg goed. Ik heb flex en order gerbuikt om de afbeelding bovenaan te zetten. Verder heb ik vooral gebruik gemaakt van padding, font-size en font-family om de sectie op te maken.
+
+  <img src="/readme-images/cadeaufolder_g.png" alt="Een screenshot van de website van een iPhone mockup met tekst en een knop" width="375px">
+  <img src="/readme-images/cadeaufolder_code.png" alt="Een screenshot van de code van de opmaak voor de sectie van de cadeaufolder" width="375px">
+
+  De iconen boven aan de pagina wilden nu wel naast elkaar staan, maar de ruimte ertussen verschilde. Ik heb dit probleem proberen op te lossen met justify-content, img padding en width maar geen van deze werkte. Uiteindelijk heb ik niet zo moeilijk gedacht en heb ik text-align center geprobeerd wat werkte.
+
+  <img src="/readme-images/topnavfout.png" alt="screenshot van iconen die naast elkaar staan met ongelijke witruimte ertussen" width="375px">
+  <img src="/readme-images/topnavcode.png" alt="screenshot van de code text-align center" width="375px">
+  <img src="/readme-images/topnavgoed.png" alt="screenshot van iconen die naast elkaar staan met gelijke witruimte ertussen" width="375px">
+
+  De lijst onder in mijn header moest als uitgestrekte regels naast elkaar staan. Dit wilde ik doen doormiddel van flex en felx-direction. Wanneer ik dit deed kwamen de list items wel naast elkaar te staan, maar de regels waren niet uitgestrekt. Demi zei dat ik dit kon proberen op te lossen met overflow scroll en evt. white-space nowrap dus heb ik dit geprobeerd. Om ze dan naast elkaar te krijgen heb ik gebruik gemaakt van een inline-block dat ervoor zorgt dat de list items niet zomaar meer verticale ruimte innemen.
+
+  <img src="/readme-images/topnavfout.png" alt="screenshot van list items naast elkaar gepropt" width="375px">
+  <img src="/readme-images/topnavcode.png" alt="screenshot van de code overflow, white-space en inline-block" width="375px">
+  <img src="/readme-images/topnavgoed.png" alt="screenshot van list items gestrekt naast elkaar" width="375px">
+
+  Bij de cadeauzoeker wilde ik het icoontje van het vergrootglas naast de header zetten door middel van een grid. Op CSS tricks zag ik dat hier een manier voor was door de grid een soort van te schetsen. Hiervoor gaf ik eerst met grid-area elk onderdeel wat in de grid zit een eigen naam. Vervolgens heb ik in de sectie waar ik de grid heb geplaatst grid-template-areas gebruikt om de grid te 'schetsen'. Ik gaf een rij aan met aanhalingstekens en in elke column zette ik de naam van het element dat ik daar wilde hebben.
+
+  <img src="/readme-images/cadeauzoeker _icon_fout.png" alt="screenshot van vergrootglas icon dat onder de header staat" width="375px">
+  <img src="/readme-images/cadeauzoeker_icon_code.png" alt="screenshot van code waar ik grid-area gebruik" width="375px">
+  <img src="/readme-images/cadeauzoeker_icon_goed.png" alt="screenshot van vergrootglas icon dat naast de header staat" width="375px">
+
+  z-index
+
+  <img src="" alt="" width="375px">
 
 
   ### Agenda voor meeting
@@ -285,5 +310,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. https://stackoverflow.com/questions/63179896/displaying-an-image-in-search-bar-html over image in form
   3. https://mastery.games/post/flexbox-order/ over flex order
   4. https://css-tricks.com/snippets/css/complete-guide-grid/ over centreren in grid fraction
+  5. https://css-tricks.com/almanac/properties/z/z-index/ over z-index
+  6. https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp over scrollende list
+  7. https://developer.mozilla.org/en-US/docs/Web/CSS/white-space over whitespace
+  8. https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-template-areas over grid 'schetsen'
 
 </details>

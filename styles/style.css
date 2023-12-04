@@ -86,28 +86,26 @@ header {
 
 header ul:nth-child(1) {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 0;
 }
 
 header ul:nth-child(1) li {
   list-style: none;
   display: flex;
-  justify-content: center;
+  text-align: center;
+
 }
 
 header ul:nth-child(1) a {
 	color: #fff;
 	text-decoration: none;
   font-size: 0.6rem;
-
-  /* width: 2.5em; */
+  align-self: center;
 }
 
 
 header ul:nth-child(1) a img {
-  height: 2.5em;
+  height: 3em;
 }
 
 
@@ -141,7 +139,8 @@ header button {
   background-color: transparent;
   color: #fff;
   border: none;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
+  align-self: baseline;
 }
 
 
@@ -151,6 +150,7 @@ header nav {
   inset: 0; /* inset is links, rechts, boven en onder samen */
   translate: 100% 0;
   font-size: 1.5rem;
+  z-index: 1;  /* met hulp van https://css-tricks.com/almanac/properties/z/z-index/ */
 }
 
 
@@ -250,13 +250,12 @@ nav ul:nth-child(3) li:nth-child(3) { /* zodat de onderste geen border heeft */
 
 /* --- onderste deel van header --- */
 header>ul:nth-of-type(2) {
-  /* width: 100vw; */
   background-color: #d8d8d8;
   margin: 0 -1em -1em -1em; /* min om zo het hele scherm op te nemen */
   padding: 0;
-  
-  display: flex;
-  flex-direction: row;
+
+  overflow: scroll; /* zorgt ervoor dat de lijst srolled */
+  white-space: nowrap; /* zorgt ervoor dat de lijst op gelijke hoogte blijft met hulp van https://developer.mozilla.org/en-US/docs/Web/CSS/white-space*/
 }
 
 
@@ -264,24 +263,27 @@ header>ul:nth-of-type(2)>li {
   list-style: none;
   padding: 1em;
 
-  /* flex-direction: column; */
+  display: inline-block; /* zorgt ervoor dat de content niet meer ruimte opneemt dan gegeven > dus naast elkaar ipv onder */
+  width: 100vw;
 }
 
 
 header>ul:nth-of-type(2) a {
   color: #134395;;
   display: flex;
-  align-items: center;
+  align-items: center;  /* voor image en text naast elkaar */
+  justify-content: center;
 }
 
 
 header>ul:nth-of-type(2) img {
   width: 1rem;
   height: auto;
+  margin: 0 0.5em;  /* voor ruimte tussen img en tekst (margin ipv padding vanwege borderbox) */
 }
 
 
-/* header>ul>li:nth-child(1) {
+/* header ul:nth-of-type(2) li:nth-child(1) {
   translate: -100% 0;
 } */
 
@@ -307,12 +309,12 @@ h2, h3 {
 main section:nth-child(1) h2 {
   text-transform: uppercase;
   color: red; /* #134395 */
-  line-height: 40px;
+  line-height: 1.5em;
   font-size: 1.9rem;
 
-  /* position: absolute;
-  top: 7.4em;
-  left: 1em; */
+  position: absolute;
+  top: 6.2em;
+  left: .9em;
 }
 
 section:nth-child(1) img {
@@ -328,7 +330,7 @@ main article ul {
   padding: 0em;
   margin: 0 -1em 0 -1em;
   display: flex;
-  overflow-x: scroll; /* Met hulp van Demi */
+  overflow-x: scroll; /* Met hulp van Demi en https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp*/
 }
 
 main article li {
@@ -402,17 +404,13 @@ main section:nth-of-type(2) a{
 
 
 /* --- reserveer nu --- */
-main section:nth-of-type(3) {
-  margin: 3rem 0 3rem 0;
-  background-color: coral;
-}
-
-
 main section:nth-of-type(3) h2 {
   font-family: 'EurostileLtStd-Cn','Helvetica Neue',sans-serif;
   font-size: 1.7em;
-  padding: 0 0 0 1rem;
+  padding: 1.5rem 0 0 1rem;
   color: #fff;
+
+  position: absolute;
 }
 
 /* knoppen */
@@ -426,6 +424,11 @@ main section:nth-of-type(n+3)>a{
 
   font-size: 1em;
   font-family: 'Circe-Bold','Helvetica Neue',sans-serif;
+}
+
+main section:nth-of-type(3)>a { /* om de knop op de afbeelding te krijgen */
+  position: absolute;
+  margin: -4rem 1rem;  
 }
 
 
@@ -464,6 +467,13 @@ main section:nth-of-type(5) {
   background-image: url(/images/confetti.png);
   color: #134395;
   margin: 0rem 0 1.5rem 0;
+
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  grid-template-areas: /* Met hulp van https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-template-areas */
+  "img h2"
+  "h3 h3"
+  "nav nav"; /* hier schets ik als het ware hoe de grid ingevuld moet worden */
 }
 
 
@@ -471,7 +481,9 @@ main section:nth-of-type(5) h2 {
   font-family: 'EurostileLtStd-Cn','Helvetica Neue',sans-serif;
   font-size: 1.6em;
   font-weight: 400;
-  padding: 2rem 0 1rem 1rem;
+  padding: 2rem 0 1rem 0;
+
+  grid-area: h2; /* hiermee geef ik als het ware een naam aan het element */
 }
 
 
@@ -480,6 +492,15 @@ main section:nth-of-type(5) h3 {
   font-size: 1.3em;
   font-weight: 400;
   padding: 0rem 02rem 1rem 1rem;
+
+  grid-area: h3;
+}
+
+main section:nth-of-type(5)>img {
+  grid-area: img;
+
+  padding: 1.8rem 0 1rem 1rem;
+
 }
 
 
@@ -487,6 +508,8 @@ main section:nth-of-type(5) h3 {
 main nav {
   display: flex;
   justify-content: center;
+
+  grid-area: nav;
 }
 
 

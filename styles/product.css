@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Circe-Regular';
+    src: url('/assets/CRC35.otf');
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Circe-Bold';
+    src: url('/assets/CRC65.otf');
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'EurostileLtStd-Cn';
+    src: url('/assets/EurostileLTStd-Cn.otf');
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'EurostileLtStd-Bold';
+    src: url('/assets/EurostileLTStd_Bold_Condensed.otf');
+    font-style: normal;
+  }
+  
+  
+  
+  
+  
+  /**************/
+  /* CSS REMEDY */
+  /**************/
+  *, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  
+  
+  
+  
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+      /* startje */
+      --color-text:#111;
+      --color-background:#eee;
+  }
+  
+  
+  
+  
+  
+  /****************/
+  /* JOUW STYLING */
+  /****************/
+  
+  /* jouw code */
+  * {
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Circe-Regular','Helvetica Neue',sans-serif;
+  }
+  
+  
+  body {
+      background-color: #fff;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  
+  
+  
+  
+  /* ---------------- */
+  /* ---- header ---- */
+  /* ---------------- */
+  header {
+    font-size: 0.8rem;
+    line-height: 12px;
+    background-color: #134395;;
+    padding: 1em;
+  }
+  
+  
+  header ul:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+  
+  header ul:nth-child(1) li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  header ul:nth-child(1) a {
+      color: #fff;
+      text-decoration: none;
+    font-size: 0.6rem;
+  
+    /* width: 2.5em; */
+  }
+  
+  
+  header ul:nth-child(1) a img {
+    height: 2.5em;
+  }
+  
+  
+  
+  /* --- zoekbalk --- */
+  form {
+    text-align: center;
+    margin: 1em 0 1em 0;
+  }
+  
+  
+  form input {
+    border: none;
+    border-radius: .8em;
+    height: 45px;
+    width: 90vw;
+    padding: 9px 45px 7px 12px;
+    color: #454545;
+  
+    /* background image idee van https://stackoverflow.com/questions/63179896/displaying-an-image-in-search-bar-html */
+    background-image: url("/images/icons/zoek_icon.svg");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 1.8em;
+  }
+  
+  
+  
+  /* --- Het menu --- */
+  header button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 0.7rem;
+  }
+  
+  
+  header nav {
+    background: #e6e8f7;
+    position: fixed;
+    inset: 0; /* inset is links, rechts, boven en onder samen */
+    translate: 100% 0;
+    font-size: 1.5rem;
+  }
+  
+  
+  header nav.openMenu {
+    translate: 0;
+    transition: 0.3s;
+  }
+  
+  /* tekst en knop bovenin */
+  nav article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: .6em .5em;
+    align-items: center;
+  }
+  
+  
+  article button {
+    grid-column: -1;
+  }
+  
+  
+  article button img {
+    width: 35px;
+    height: auto;
+  }
+  
+  
+  article p {
+    grid-column: 2;
+    text-align: center;
+    color: #134395;
+    text-transform: uppercase;
+    font-size: 1rem;
+    grid-area: 1/4/1/1; /* Met hulp van Demi */
+    font-family: 'Circe-Bold','Helvetica Neue',sans-serif;
+  }
+  
+  /* nav elementen wit */
+  nav ul {
+    width: 100%;
+    padding: 0;
+  }
+  
+  
+  nav li {
+    list-style: none;
+    background-color: #fff;
+    line-height: 24px;
+    border-bottom: 1px solid #a6b2e7;
+    padding: .6em .8em .6em .6em;
+  }
+  
+  
+  nav img {
+    width: .6em;
+    height: auto;
+    /* justify-content: flex-end; */
+  }
+  
+  
+  nav li a {
+    color: #134395;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+  
+  
+  nav ul:nth-child(2) li:nth-child(1) { /* anders is de bovenste lijn dunner dan alle andere */
+    border-top: 1px solid #a6b2e7;
+  }
+  
+  /* nav elementen blauw */
+  nav ul:nth-child(3) li {
+    list-style: none;
+    background-color: transparent;
+    line-height: 24px;
+  
+    border-bottom: 1px solid #a6b2e7;
+    width: 100%;
+    padding: 8px 8px 8px 16px;
+  }
+  
+  
+  nav ul:nth-child(3) li a {
+    font-size: 1rem;
+    color: #134395;
+    font-weight: 400;
+  }
+  
+  
+  nav ul:nth-child(3) li:nth-child(3) { /* zodat de onderste geen border heeft */
+    border-bottom: 0;
+  }
+  
+  
+  
+  /* --- onderste deel van header --- */
+  header>ul:nth-of-type(2) {
+    /* width: 100vw; */
+    background-color: #d8d8d8;
+    margin: 0 -1em -1em -1em; /* min om zo het hele scherm op te nemen */
+    padding: 0;
+    
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  header>ul:nth-of-type(2)>li {
+    list-style: none;
+    padding: 1em;
+  
+    /* flex-direction: column; */
+  }
+  
+  
+  header>ul:nth-of-type(2) a {
+    color: #134395;;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  header>ul:nth-of-type(2) img {
+    width: 1rem;
+    height: auto;
+  }
+  
+  
+  /* header>ul>li:nth-child(1) {
+    translate: -100% 0;
+  } */
+
+  
+  
+
+
+/* -------------- */
+/* ---- main ---- */
+/* -------------- */
+main {
+    padding: 0 1em;
+  }
