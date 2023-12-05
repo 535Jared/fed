@@ -114,6 +114,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="readme-images/ophalen_afbeeldingen.png" alt="screenshot van een geïnspecteerde afbeelding op de site van Primera">
 
+  Het maken van een menu dat je kan open klappen, heb ik gedaan met de oefening op codepen. Ik heb met translate het menu uit beeld gebracht en heb deze weer terug laten komen met translate. Om het werkend te maken heb ik javascript gebruikt waar ik onclick gebruikte om functies uit te laten voeren.
+
+  <img src="/readme-images/open_menu.png" alt="screenshot van de knop om het menu te openen" width="375px">
+  <img src="/readme-images/open_menu_2.png" alt="screenshot van het menu open geklapt" width="375px">
+  <img src="/readme-images/open_menu_html.png" alt="screenshot van de html code van de navigatie" width="375px">
+  <img src="/readme-images/open_menu_css.png" alt="screenshot van de css die ik heb gebruikt om het menu vorm te geven" width="375px">
+  <img src="/readme-images/open_menu_java.png" alt="screenshot van de javascript code met de functies die worden uitgevoerd" width="375px">
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
