@@ -243,7 +243,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="/readme-images/cadeauzoeker_icon_code.png" alt="screenshot van code waar ik grid-area gebruik" width="375px">
   <img src="/readme-images/cadeauzoeker_icon_goed.png" alt="screenshot van vergrootglas icon dat naast de header staat" width="375px">
 
-  z-index
+  Omdat ik position absolute heb gebruikt om tekst over plaatjes te krijgen, bleef deze tekst ook zichtbaar als ik mijn menu open klapte. Om dit op te lossen heb ik gebruik gemaakt van de z-index. Hiermee zeg ik op welke layer mijn element moet zijn. Door het menu een z-index van één te geven, zeg ik dus dat het menu boven alle andere elementen zichtbaar moet zijn.
+
+  <img src="/readme-images/z_index.png" alt="screenshot van tekst op het uitgeklapte menu" width="375px">
+  <img src="/readme-images/z_index_code.png" alt="screenshot van de z-index code in css" width="375px">
 
   <img src="" alt="" width="375px">
 
