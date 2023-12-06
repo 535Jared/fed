@@ -325,5 +325,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   6. https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp over scrollende list
   7. https://developer.mozilla.org/en-US/docs/Web/CSS/white-space over whitespace
   8. https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-template-areas over grid 'schetsen'
+  9. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations over animaties
 
 </details>
