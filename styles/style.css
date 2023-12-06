@@ -250,7 +250,7 @@ nav ul:nth-child(3) li:nth-child(3) { /* zodat de onderste geen border heeft */
 
 /* --- onderste deel van header --- */
 header>ul:nth-of-type(2) {
-  background-color: #d8d8d8;
+  background-color: #fff;
   margin: 0 -1em -1em -1em; /* min om zo het hele scherm op te nemen */
   padding: 0;
 
@@ -283,9 +283,76 @@ header>ul:nth-of-type(2) img {
 }
 
 
-/* header ul:nth-of-type(2) li:nth-child(1) {
-  translate: -100% 0;
-} */
+header>ul:nth-of-type(2)>li:nth-of-type(1) {
+  position: relative;
+  animation-name: balk;
+  animation-duration: 20s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes balk {
+  0%   {background-color:#fff; left:0vw; top:0vw;}
+  30%  {background-color:#fff; left:0vw; top:0vw;}
+  
+  33%  {background-color:#fff; left:-100vw; top:0vw;}
+  63%  {background-color:#fff; left:-100vw; top:0vw;}
+  
+  66%  {background-color:#fff; left:-200vw; top:0vw;}
+  96%  {background-color:#fff; left:-200vw; top:0vw;}
+}
+
+
+
+header>ul:nth-of-type(2)>li:nth-of-type(2) {
+  position: relative;
+  animation-name: balk2;
+  animation-duration: 20s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes balk2 {
+  0%   {background-color:#fff; left:0vw; top:0vw;}
+  30%  {background-color:#fff; left:0vw; top:0vw;}
+  
+  33%  {background-color:#fff; left:-100vw; top:0vw;}
+  63%  {background-color:#fff; left:-100vw; top:0vw;}
+  
+  66%  {background-color:#fff; left:-200vw; top:0vw;}
+  96%  {background-color:#fff; left:-200vw; top:0vw;}
+}
+
+
+
+header>ul:nth-of-type(2)>li:nth-of-type(3) {
+  position: relative;
+  animation-name: balk3;
+  animation-duration: 20s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes balk3 {
+  0%   {background-color:#fff; left:0vw; top:0vw;}
+  30%  {background-color:#fff; left:0vw; top:0vw;}
+  
+  33%  {background-color:#fff; left:-100vw; top:0vw;}
+  63%  {background-color:#fff; left:-100vw; top:0vw;}
+  
+  66%  {background-color:#fff; left:-200vw; top:0vw;}
+  96%  {background-color:#fff; left:-200vw; top:0vw;}
+}
+
+
 
 
 
@@ -328,7 +395,7 @@ section:nth-child(1) img {
 main article ul {
   list-style: none;
   padding: 0em;
-  margin: 0 -1em 0 -1em;
+  margin: 0 -1em 1em -1em;
   display: flex;
   overflow-x: scroll; /* Met hulp van Demi en https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp*/
 }
@@ -466,7 +533,8 @@ main section:nth-of-type(4) p {
 main section:nth-of-type(5) {
   background-image: url(/images/confetti.png);
   color: #134395;
-  margin: 0rem 0 1.5rem 0;
+  margin: 2.5rem 0 1.5rem 0;
+  padding: 0 0 1rem 0;
 
   display: grid;
   grid-template-columns: 3em 1fr;
@@ -496,15 +564,14 @@ main section:nth-of-type(5) h3 {
   grid-area: h3;
 }
 
-main section:nth-of-type(5)>img {
+main section:nth-of-type(5)>img { /* icon vergrootglas */
   grid-area: img;
 
-  padding: 1.8rem 0 1rem 1rem;
-
+  margin: 1.8rem 0 1rem 1rem;
 }
 
 
-/* --- De list items --- */
+/* De list items */
 main nav {
   display: flex;
   justify-content: center;
@@ -523,12 +590,11 @@ main nav li {
   list-style: none;
   background-color: #fff;
   line-height: 1.5em;
-  border: solid .1em;
-  border-color: #d8d8d8;
+  border: .1em;
+  box-shadow: 0 0em .5em #d8d8d8; /* Met hulp van https://css-tricks.com/almanac/properties/b/box-shadow/ */
   border-radius: .5rem;
   
-  padding: 1em 1.5em 1em 1em;
-  margin: .5em;
+  margin: .7em 0;
 }
 
 
@@ -536,12 +602,17 @@ main nav li a {
   color: #134395;
   font-weight: 600;
   font-size: 1rem;
+
+  display: flex;
+  align-items: center;
 }
 
 
 main nav li img {
   width: 2em;
   height: auto;
+  order: -1;
+  margin: 0 1rem 0 0;
 }
 
 
@@ -549,11 +620,18 @@ main nav li img {
 
 /* --- Jasper --- */
 main section:nth-of-type(6) {
-  margin: 3rem 0 3rem 0;
+  margin: 3rem 0;
   background-image: url(/images/Winkelzoeker-mob.png);
   background-repeat: no-repeat;
-  background-color: coral;
   color: #fff;
+
+  display: grid;
+  grid-template-columns: 3em 1fr;
+  grid-template-areas:
+  "Img H2"
+  "H3 H3"
+  "form form"
+  "section section";
 }
 
 
@@ -561,7 +639,9 @@ main section:nth-of-type(6) h2 {
   font-family: 'EurostileLtStd-Cn','Helvetica Neue',sans-serif;
   font-size: 1.6em;
   font-weight: 200;
-  padding: 2rem 0 1rem 1rem;
+  padding: 2rem 2rem 1rem .5rem;
+
+  grid-area: H2;
 }
 
 
@@ -569,7 +649,16 @@ main section:nth-of-type(6) h3 {
   font-family: 'EurostileLtStd-Cn','Helvetica Neue',sans-serif;
   font-size: 1.4em;
   font-weight: 400;
-  padding: 0 4.5rem 1rem 1rem;
+  padding: 0 4.5rem 1rem 1.5rem;
+
+  grid-area: H3;
+}
+
+
+main section:nth-of-type(6) img {
+  grid-area: Img;
+  width: 2.5em;
+  margin: 2rem 0 0 .8rem;
 }
 
 
@@ -577,6 +666,8 @@ main section:nth-of-type(6) h3 {
 main form {
   text-align: center;
   margin: 1em 0 1em 0;
+
+  grid-area: form;
 }
 
 
@@ -599,7 +690,9 @@ main form input {
 /* onderste tekst */
 main section:nth-of-type(6) section {
   text-align: center;
-  padding: 2rem 0 2.2rem 0;
+  padding: 1.5rem 0 2.2rem 0;
+
+  grid-area: section;
 }
 
 
@@ -761,7 +854,7 @@ footer>ul:nth-of-type(1) li {
 footer>ul:nth-of-type(1) img {
   width: .7em;
   height: auto;
-  /* justify-content: end; */
+  justify-content: end;
 }
 
 
@@ -771,13 +864,7 @@ footer>ul:nth-of-type(1) img {
 
 
 
-
-
-
-
-
-
-/* --- uitklapbare lijst --- */
+/* --- onderste lijst --- */
 footer>ul:nth-of-type(2) {
   background-color: #DFE2F5;
   list-style: none;
@@ -790,4 +877,14 @@ footer>ul:nth-of-type(2) a {
   color: #134395;
   font-size: 1em;
   line-height: 2rem;
+}
+
+
+
+
+/* --- afbeeldingen onderaan --- */
+footer article {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
 }
