@@ -37,37 +37,37 @@
   
   
   
-  
-  /*********************/
-  /* CUSTOM PROPERTIES */
-  /*********************/
-  :root {
-      /* startje */
-      --color-text:#111;
-      --color-background:#eee;
-  }
-  
-  
-  
-  
-  
-  /****************/
-  /* JOUW STYLING */
-  /****************/
-  
-  /* jouw code */
-  * {
-    margin: 0;
-    text-decoration: none;
-    font-family: 'Circe-Regular','Helvetica Neue',sans-serif;
-  }
-  
-  
-  body {
-      background-color: #fff;
-    font-weight: 400;
-    line-height: 24px;
-  }
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    /* startje */
+    --color-text:#111;
+    --color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+* {
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Circe-Regular','Helvetica Neue',sans-serif;
+}
+
+
+body {
+    background-color: #fff;
+  font-weight: 400;
+  line-height: 24px;
+}
   
   
   

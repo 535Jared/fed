@@ -402,7 +402,7 @@ main section:nth-child(1) h2 {
   left: .9em;
 }
 
-section:nth-child(1) img {
+main section:nth-child(1) img {
   width: 100vw;
   margin: 0 0 0 -1em;
 }
