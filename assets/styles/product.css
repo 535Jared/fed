@@ -1,0 +1,562 @@
+@font-face {
+    font-family: 'Circe-Regular';
+    src: url('../assets/CRC35.otf');
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Circe-Bold';
+    src: url('../assets/CRC65.otf');
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'EurostileLtStd-Cn';
+    src: url('../assets/EurostileLTStd-Cn.otf');
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'EurostileLtStd-Bold';
+    src: url('../assets/EurostileLTStd_Bold_Condensed.otf');
+    font-style: normal;
+  }
+  
+  
+  
+  
+  
+  /**************/
+  /* CSS REMEDY */
+  /**************/
+  *, *::after, *::before {
+    box-sizing:border-box;  
+  }
+  
+  
+  
+  
+  
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+    /* startje */
+    --color-text:#111;
+    --color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+* {
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Circe-Regular','Helvetica Neue',sans-serif;
+}
+
+
+body {
+    background-color: #fff;
+  font-weight: 400;
+  line-height: 24px;
+}
+  
+  
+  
+  
+  
+/* ---------------- */
+/* ---- header ---- */
+/* ---------------- */
+header {
+  font-size: 0.8rem;
+  line-height: 12px;
+  background-color: #134395;;
+  padding: 1em;
+}
+
+
+header ul:nth-child(1) {
+  display: flex;
+  padding: 0;
+}
+
+header ul:nth-child(1) li {
+  list-style: none;
+  display: flex;
+  text-align: center;
+
+}
+
+header ul:nth-child(1) a {
+	color: #fff;
+	text-decoration: none;
+  font-size: 0.6rem;
+  align-self: center;
+}
+
+
+header ul:nth-child(1) a img {
+  height: 3em;
+}
+
+
+
+/* --- zoekbalk --- */
+form {
+  text-align: center;
+  margin: 1em 0 1em 0;
+}
+
+
+form input {
+  border: none;
+  border-radius: .8em;
+  height: 45px;
+  width: 90vw;
+  padding: 9px 45px 7px 12px;
+  color: #454545;
+
+  /* background image idee van https://stackoverflow.com/questions/63179896/displaying-an-image-in-search-bar-html */
+  background-image: url("../images/icons/zoek_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 1.8em;
+}
+
+
+
+/* --- Het menu --- */
+header button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 0.6rem;
+  align-self: baseline;
+}
+
+
+header nav {
+  background: #e6e8f7;
+  position: fixed;
+  inset: 0; /* inset is links, rechts, boven en onder samen */
+  translate: 100% 0;
+  font-size: 1.5rem;
+  z-index: 1;  /* met hulp van https://css-tricks.com/almanac/properties/z/z-index/ */
+}
+
+
+header nav.openMenu {
+  translate: 0;
+  transition: 0.3s;
+}
+
+/* tekst en knop bovenin */
+nav article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: .6em .5em;
+  align-items: center;
+}
+
+
+article button {
+  grid-column: -1;
+}
+
+
+article button img {
+  width: 35px;
+  height: auto;
+}
+
+
+article p {
+  grid-column: 2;
+  text-align: center;
+  color: #134395;
+  text-transform: uppercase;
+  font-size: 1rem;
+  grid-area: 1/4/1/1; /* Met hulp van Demi */
+  font-family: 'Circe-Bold','Helvetica Neue',sans-serif;
+}
+
+/* nav elementen wit */
+nav ul {
+  width: 100%;
+  padding: 0;
+}
+
+
+nav li {
+  list-style: none;
+  background-color: #fff;
+  line-height: 24px;
+  border-bottom: 1px solid #a6b2e7;
+  padding: .6em .8em .6em .6em;
+}
+
+
+nav li a {
+  color: #134395;
+  font-weight: 300;
+  font-size: 1.3rem;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+nav li a img {
+  width: .6em;
+  height: .6em;
+  align-self: center;
+  margin-left: auto;
+}
+
+
+nav ul:nth-of-type(1) li:nth-child(1) { /* anders is de bovenste lijn dunner dan alle andere */
+  border-top: 1px solid #a6b2e7;
+}
+
+/* nav elementen blauw */
+nav ul:nth-child(3) li {
+  list-style: none;
+  background-color: transparent;
+  line-height: 24px;
+
+  border-bottom: 1px solid #a6b2e7;
+  width: 100%;
+  padding: 8px 8px 8px 16px;
+}
+
+
+nav ul:nth-child(3) li a {
+  font-size: 1rem;
+  color: #134395;
+  font-weight: 400;
+}
+
+
+nav ul:nth-child(3) li:nth-child(3) { /* zodat de onderste geen border heeft */
+  border-bottom: 0;
+}
+
+
+
+/* --- onderste deel van header --- */
+header>ul:nth-of-type(2) {
+  background-color: #fff;
+  margin: 0 -1em -1em -1em; /* min om zo het hele scherm op te nemen */
+  padding: 0;
+
+  overflow: scroll; /* zorgt ervoor dat de lijst srolled */
+  white-space: nowrap; /* zorgt ervoor dat de lijst op gelijke hoogte blijft met hulp van https://developer.mozilla.org/en-US/docs/Web/CSS/white-space*/
+}
+
+
+header>ul:nth-of-type(2)>li {
+  list-style: none;
+  padding: 1em;
+
+  display: inline-block; /* zorgt ervoor dat de content niet meer ruimte opneemt dan gegeven > dus naast elkaar ipv onder */
+  width: 100vw;
+}
+
+
+header>ul:nth-of-type(2) a {
+  color: #134395;;
+  display: flex;
+  align-items: center;  /* voor image en text naast elkaar */
+  justify-content: center;
+}
+
+
+header>ul:nth-of-type(2) img {
+  width: 1rem;
+  height: auto;
+  margin: 0 0.5em;  /* voor ruimte tussen img en tekst (margin ipv padding vanwege borderbox) */
+}
+
+/* animatie */
+header>ul:nth-of-type(2)>li:nth-of-type(1) {
+  position: relative;
+  animation-name: balk;
+  animation-duration: 20s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes balk {
+  0%   {background-color:#fff; left:0vw; top:0vw;}
+  30%  {background-color:#fff; left:0vw; top:0vw;}
+  
+  33%  {background-color:#fff; left:-100vw; top:0vw;}
+  63%  {background-color:#fff; left:-100vw; top:0vw;}
+  
+  66%  {background-color:#fff; left:-200vw; top:0vw;}
+  96%  {background-color:#fff; left:-200vw; top:0vw;}
+}
+
+
+
+header>ul:nth-of-type(2)>li:nth-of-type(2) {
+  position: relative;
+  animation-name: balk2;
+  animation-duration: 20s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes balk2 {
+  0%   {background-color:#fff; left:0vw; top:0vw;}
+  30%  {background-color:#fff; left:0vw; top:0vw;}
+  
+  33%  {background-color:#fff; left:-100vw; top:0vw;}
+  63%  {background-color:#fff; left:-100vw; top:0vw;}
+  
+  66%  {background-color:#fff; left:-200vw; top:0vw;}
+  96%  {background-color:#fff; left:-200vw; top:0vw;}
+}
+
+
+
+header>ul:nth-of-type(2)>li:nth-of-type(3) {
+  position: relative;
+  animation-name: balk3;
+  animation-duration: 20s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes balk3 {
+  0%   {background-color:#fff; left:0vw; top:0vw;}
+  30%  {background-color:#fff; left:0vw; top:0vw;}
+  
+  33%  {background-color:#fff; left:-100vw; top:0vw;}
+  63%  {background-color:#fff; left:-100vw; top:0vw;}
+  
+  66%  {background-color:#fff; left:-200vw; top:0vw;}
+  96%  {background-color:#fff; left:-200vw; top:0vw;}
+}
+
+
+  
+  
+
+/* -------------- */
+/* ---- main ---- */
+/* -------------- */
+main {
+    padding: 0 1em;
+  }
+
+
+
+
+
+/* ---------------- */
+/* ---- footer ---- */
+/* ---------------- */
+
+/* --- kunnen we helpen --- */
+footer section:nth-of-type(1) {
+  background-color: #134395;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 3em 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  padding: 1rem 0 1rem 1rem;
+  align-items: center;
+}
+
+
+footer section:nth-of-type(1) h2 {
+  grid-column: 1/-1;
+  padding: 1.5rem 0 1rem 0;
+
+  font-family: 'EurostileLtStd-Cn','Helvetica Neue',sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+
+/* images */
+footer section:nth-of-type(1) img {
+  width: 1.5em;
+  justify-self: center; /* Met hulp van https://css-tricks.com/snippets/css/complete-guide-grid/ */
+}
+
+footer section:nth-of-type(1) img:nth-of-type(1) {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+footer section:nth-of-type(1) img:nth-of-type(2) {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+footer section:nth-of-type(1) img:nth-of-type(3) {
+  grid-row: 4;
+  grid-column: 1;
+}
+
+/* tekst */
+footer section:nth-of-type(1) a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer section:nth-of-type(1) p:nth-of-type(1) {
+  grid-row: 2;
+  grid-column: 2/-1;
+  padding: 0 8em 0 0;
+}
+
+footer section:nth-of-type(1) p:nth-of-type(2) {
+  grid-row: 3;
+  grid-column: 2/-1;
+}
+
+footer section:nth-of-type(1) p:nth-of-type(3) {
+  grid-row: 4;
+  grid-column: 2/-1;
+}
+
+
+
+/* --- nieuwsbrief --- */
+footer section:nth-of-type(2) {
+  background-color: #DFE2F5;
+  color: #134395;
+  padding: 2rem 1rem 2rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer section:nth-of-type(2) h2, h3 {
+  font-family: 'EurostileLtStd-Cn','Helvetica Neue',sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  padding: 0 0 1rem 0;
+}
+
+
+footer form {
+  text-align: center;
+  margin: 0 0 1.5em 0;
+}
+
+
+footer form input {
+  border: solid .1rem;
+  border-color: #a6b2e7;
+  border-radius: .8em;
+  height: 45px;
+  width: 90vw;
+  padding: 9px 45px 7px 12px;
+  color: #134395;
+
+  background-image: url("../images/icons/inschrijven_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 1.8em;
+}
+
+
+
+/* --- uitklapbare lijst --- */
+details {
+  width: 100%;
+  padding: 0;
+}
+
+
+details summary {
+  list-style: none;
+  background-color: #fff;
+  line-height: 1.5em;
+  border-top: 1px solid #DFE2F5;
+  padding: 1em 1.5em 1em 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  color: #134395;
+  font-weight: 400;
+  font-size: 1.3rem;
+  font-family: 'EurostileLtStd-Cn','Helvetica Neue',sans-serif;
+}
+
+
+details img {
+  width: .7em;
+  height: auto;
+  margin-left: auto;
+}
+
+
+details article {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+details article a {
+  padding-left: .5em;
+  color: #134395;
+}
+
+
+
+/* --- onderste lijst --- */
+footer>ul:nth-of-type(1) {
+  background-color: #DFE2F5;
+  list-style: none;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+
+footer>ul:nth-of-type(1) a {
+  color: #134395;
+  font-size: 1em;
+  line-height: 2rem;
+}
+
+
+
+/* --- afbeeldingen onderaan --- */
+footer article {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+
+
+
+
+
+
