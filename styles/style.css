@@ -1,24 +1,24 @@
 @font-face {
   font-family: 'Circe-Regular';
-  src: url('/assets/CRC35.otf');
+  src: url('../assets/CRC35.otf');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Circe-Bold';
-  src: url('/assets/CRC65.otf');
+  src: url('../assets/CRC65.otf');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'EurostileLtStd-Cn';
-  src: url('/assets/EurostileLTStd-Cn.otf');
+  src: url('../assets/EurostileLTStd-Cn.otf');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'EurostileLtStd-Bold';
-  src: url('/assets/EurostileLTStd_Bold_Condensed.otf');
+  src: url('../assets/EurostileLTStd_Bold_Condensed.otf');
   font-style: normal;
 }
 
@@ -84,32 +84,19 @@ header {
 }
 
 
-h1 {
-  display: none;
-}
-
-
-/* #region weeee */
-
-/* header section {
-
-} */
-
-/* #endregion weeee */
-
-header ul:nth-of-type(1) {
+header ul:nth-child(1) {
   display: flex;
   padding: 0;
 }
 
-header ul:nth-of-type(1) li {
+header ul:nth-child(1) li {
   list-style: none;
   display: flex;
   text-align: center;
 
 }
 
-header ul:nth-of-type(1) a {
+header ul:nth-child(1) a {
 	color: #fff;
 	text-decoration: none;
   font-size: 0.6rem;
@@ -117,7 +104,7 @@ header ul:nth-of-type(1) a {
 }
 
 
-header ul:nth-of-type(1) a img {
+header ul:nth-child(1) a img {
   height: 3em;
 }
 
@@ -139,7 +126,7 @@ form input {
   color: #454545;
 
   /* background image idee van https://stackoverflow.com/questions/63179896/displaying-an-image-in-search-bar-html */
-  background-image: url("/images/icons/zoek_icon.svg");
+  background-image: url("../images/icons/zoek_icon.svg");
   background-repeat: no-repeat;
   background-position: 95%;
   background-size: 1.8em;
@@ -232,12 +219,11 @@ nav li a img {
   width: .6em;
   height: .6em;
   align-self: center;
-  justify-self: flex-end;
-  /* margin-left: auto; */
+  margin-left: auto;
 }
 
 
-nav ul:nth-child(2) li:nth-child(1) { /* anders is de bovenste lijn dunner dan alle andere */
+nav ul:nth-of-type(1) li:nth-child(1) { /* anders is de bovenste lijn dunner dan alle andere */
   border-top: 1px solid #a6b2e7;
 }
 
@@ -549,7 +535,7 @@ main section:nth-of-type(4) p {
 
 /* --- cadeauzoeker --- */
 main section:nth-of-type(5) {
-  background-image: url(/images/confetti.png);
+  background-image: url(../images/confetti.png);
   color: #134395;
   margin: 2.5rem 0 1.5rem 0;
   padding: 0 0 1rem 0;
@@ -640,7 +626,7 @@ main nav li img {
 /* --- Jasper --- */
 main section:nth-of-type(6) {
   margin: 3rem 0;
-  background-image: url(/images/Winkelzoeker-mob.png);
+  background-image: url(../images/Winkelzoeker-mob.png);
   background-repeat: no-repeat;
   color: #fff;
 
@@ -699,7 +685,7 @@ main form input {
   padding: 9px 45px 7px 12px;
   color: #134395;
 
-  background-image: url("/images/icons/zoek_icon.svg");
+  background-image: url("../images/icons/zoek_icon.svg");
   background-repeat: no-repeat;
   background-position: 95%;
   background-size: 1.8em;
@@ -838,7 +824,7 @@ footer form input {
   padding: 9px 45px 7px 12px;
   color: #134395;
 
-  background-image: url("/images/icons/inschrijven_icon.svg");
+  background-image: url("../images/icons/inschrijven_icon.svg");
   background-repeat: no-repeat;
   background-position: 95%;
   background-size: 1.8em;
@@ -847,17 +833,17 @@ footer form input {
 
 
 /* --- uitklapbare lijst --- */
-footer>ul:nth-of-type(1) {
+details {
   width: 100%;
   padding: 0;
 }
 
 
-footer>ul:nth-of-type(1) li {
+details summary {
   list-style: none;
   background-color: #fff;
   line-height: 1.5em;
-  border-bottom: 1px solid #DFE2F5;
+  border-top: 1px solid #DFE2F5;
   padding: 1em 1.5em 1em 1em;
 
   display: flex;
@@ -871,16 +857,29 @@ footer>ul:nth-of-type(1) li {
 }
 
 
-footer>ul:nth-of-type(1) img {
+details img {
   width: .7em;
   height: auto;
   margin-left: auto;
 }
 
 
+details article {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+details article a {
+  padding: 0 0 .5em .5em;
+  color: #134395;
+}
+
+
 
 /* --- onderste lijst --- */
-footer>ul:nth-of-type(2) {
+footer>ul:nth-of-type(1) {
   background-color: #DFE2F5;
   list-style: none;
   text-align: center;
@@ -888,7 +887,7 @@ footer>ul:nth-of-type(2) {
 }
 
 
-footer>ul:nth-of-type(2) a {
+footer>ul:nth-of-type(1) a {
   color: #134395;
   font-size: 1em;
   line-height: 2rem;
@@ -903,19 +902,3 @@ footer article {
   padding: 1em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* @media only screen and (min-width: 770px){
-  nav{
-    
-  }
-} */

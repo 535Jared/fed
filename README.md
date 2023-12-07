@@ -326,5 +326,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   7. https://developer.mozilla.org/en-US/docs/Web/CSS/white-space over whitespace
   8. https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-template-areas over grid 'schetsen'
   9. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations over animaties
+  10. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary over uitklapbaar menu
 
 </details>

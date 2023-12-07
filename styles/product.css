@@ -1,24 +1,24 @@
 @font-face {
     font-family: 'Circe-Regular';
-    src: url('/assets/CRC35.otf');
+    src: url('../assets/CRC35.otf');
     font-style: normal;
   }
   
   @font-face {
     font-family: 'Circe-Bold';
-    src: url('/assets/CRC65.otf');
+    src: url('../assets/CRC65.otf');
     font-style: normal;
   }
   
   @font-face {
     font-family: 'EurostileLtStd-Cn';
-    src: url('/assets/EurostileLTStd-Cn.otf');
+    src: url('../assets/EurostileLTStd-Cn.otf');
     font-style: normal;
   }
   
   @font-face {
     font-family: 'EurostileLtStd-Bold';
-    src: url('/assets/EurostileLTStd_Bold_Condensed.otf');
+    src: url('../assets/EurostileLTStd_Bold_Condensed.otf');
     font-style: normal;
   }
   
@@ -73,7 +73,7 @@ body {
   
   
   
-  /* ---------------- */
+/* ---------------- */
 /* ---- header ---- */
 /* ---------------- */
 header {
@@ -126,7 +126,7 @@ form input {
   color: #454545;
 
   /* background image idee van https://stackoverflow.com/questions/63179896/displaying-an-image-in-search-bar-html */
-  background-image: url("/images/icons/zoek_icon.svg");
+  background-image: url("../images/icons/zoek_icon.svg");
   background-repeat: no-repeat;
   background-position: 95%;
   background-size: 1.8em;
@@ -219,12 +219,11 @@ nav li a img {
   width: .6em;
   height: .6em;
   align-self: center;
-  justify-self: flex-end;
-  /* margin-left: auto; */
+  margin-left: auto;
 }
 
 
-nav ul:nth-child(2) li:nth-child(1) { /* anders is de bovenste lijn dunner dan alle andere */
+nav ul:nth-of-type(1) li:nth-child(1) { /* anders is de bovenste lijn dunner dan alle andere */
   border-top: 1px solid #a6b2e7;
 }
 
@@ -477,7 +476,7 @@ footer form input {
   padding: 9px 45px 7px 12px;
   color: #134395;
 
-  background-image: url("/images/icons/inschrijven_icon.svg");
+  background-image: url("../images/icons/inschrijven_icon.svg");
   background-repeat: no-repeat;
   background-position: 95%;
   background-size: 1.8em;
@@ -486,17 +485,17 @@ footer form input {
 
 
 /* --- uitklapbare lijst --- */
-footer>ul:nth-of-type(1) {
+details {
   width: 100%;
   padding: 0;
 }
 
 
-footer>ul:nth-of-type(1) li {
+details summary {
   list-style: none;
   background-color: #fff;
   line-height: 1.5em;
-  border-bottom: 1px solid #DFE2F5;
+  border-top: 1px solid #DFE2F5;
   padding: 1em 1.5em 1em 1em;
 
   display: flex;
@@ -510,16 +509,29 @@ footer>ul:nth-of-type(1) li {
 }
 
 
-footer>ul:nth-of-type(1) img {
+details img {
   width: .7em;
   height: auto;
   margin-left: auto;
 }
 
 
+details article {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+details article a {
+  padding-left: .5em;
+  color: #134395;
+}
+
+
 
 /* --- onderste lijst --- */
-footer>ul:nth-of-type(2) {
+footer>ul:nth-of-type(1) {
   background-color: #DFE2F5;
   list-style: none;
   text-align: center;
@@ -527,7 +539,7 @@ footer>ul:nth-of-type(2) {
 }
 
 
-footer>ul:nth-of-type(2) a {
+footer>ul:nth-of-type(1) a {
   color: #134395;
   font-size: 1em;
   line-height: 2rem;
@@ -541,3 +553,10 @@ footer article {
   justify-content: space-evenly;
   padding: 1em;
 }
+
+
+
+
+
+
+
