@@ -114,6 +114,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="readme-images/ophalen_afbeeldingen.png" alt="screenshot van een geïnspecteerde afbeelding op de site van Primera">
 
+  #### Het menu
+
   Het maken van een menu dat je kan open klappen, heb ik gedaan met de oefening op codepen. Ik heb met translate het menu uit beeld gebracht en heb deze weer terug laten komen met translate. Om het werkend te maken heb ik javascript gebruikt waar ik onclick gebruikte om functies uit te laten voeren.
 
   <img src="/readme-images/open_menu.png" alt="screenshot van de knop om het menu te openen" width="375px">
@@ -156,6 +158,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
+
+  #### grid-area
   Ik wilde dat de tekst en de knop in de grid op dezelfde hoogtte zaten dus gebruikte ik hiervoor align-items maar er veranderde niks.
 
   <img src="/readme-images/code_grid_align.png" alt="screenshot van de code align-items" width="375px">
@@ -166,13 +170,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="/readme-images/menu_kruis.png" alt="screenshot van het woord 'menu' en het kruisje in een grid op dezelfde hoogtte" width="375px">
   <img src="/readme-images/menu_kruis_code.png" alt="screenshot van de code waar grid-area wordt gebruikt" width="375px">
 
-  
+  #### background image
   Om een icoontje in de zoekbalk te krijgen heb ik gebruikt gemaakt van een backgroundimage. Ik probeerde het eerst in de input te krijgen met flexbox maar dit werkte niet handig. Dus had ik opgezocht hoe anderen dit doen en kwam ik terecht bij Stackoverflow waar ik zag dat iemand het met een background image deed.
 
   <img src="/readme-images/zoekbalk_image.png" alt="screenshot van de zoekbalk met een vergrootglas icon erin aan de rechterkant" width="375px">
   <img src="/readme-images/zoekbalk_image_code.png" alt="screenshot van de code waar background image gebruikt voor het icon in de zoekbalk" width="375px">
 
-  
+  #### flex-directon
   Verder probeerde ik in de navigatie de tekst onder de icoontjes te zetten met flexbox. Maar ook de icons naast elkaar te zetten. Hiervoor gebruikte ik flex-direction column maar dan werden mijn icons verplaatst naar het midden en uitgerekt.
 
   <img src="/readme-images/tekst_niet_onder_icon.png" alt="screenshot van iconen en tekst naast elkaar" width="375px">
@@ -216,12 +220,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-  * De HTML code geeft nu maar éen error (verbetering)
+  #### Verbeteringen
+  * De HTML code geeft nu maar éen error
+  * Voor buttons heb ik het button element gebruikt
+  * Viewport zoom is niet disabbeld
+  * Voor list items heb ik gebruik gemaakt van ol, ul of li
+  * Keyboard focus klopt met de visuele layout
+
+  #### Verbeterpunten
   * Ik ben vergeten een H1 te gerbuiken
-  * Voor buttons heb ik het button element gebruikt (verbetering)
-  * 
-  <!-- * Kan de text grootte niet aanpassen.
-  * De inlog knop wordt door de screenreeder niet erkend. -->
+  * Er kan nog onder cadeaukaarten iets meer ruimte om te scrollen
+  * Darkmode wordt niet gesupport
+  * De focusstate is de standaard focusstate ik zou nog een eigen kunnen toevoegen
+
+  <a href="readme-images/wcag_check_2_primera.pdf">Ingevulde WCAG checklist over de site van Primera.</a>
 
 </details>
 
@@ -286,7 +298,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="/readme-images/nav_pijl_g.png" alt="screenshot van ht menu waar het icoontje aan de rechterkant van het scherm staat" width="375px">
   <img src="/readme-images/nav_pijl_g_code.png" alt="screenshot van de code waar margin-left auto wordt gebruikt" width="375px">
 
-  #### Image in gridd
+  #### Image in grid
   In de footer van mijn pagina heb ik bij de sectie 'kunnen we helpen' gebruik gemaakt van een grid om de plaatjes naast de tekst te krijgen. Dit lukte alleen de plaatjes zaten tegen de rand van het scherm aan. Dit heb ik makkelijk kunnen oplossen door gebruik te maken van justify-self center.
 
   <img src="/readme-images/helpen_icons_f.png" alt="screenshot van plaatjes die tegen de rand van de pagina zitten" width="375px">
@@ -311,6 +323,37 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="/readme-images/uitklap_g.png" alt="screenshot van de html waar details en summery wordt gebruikt" width="375px"> 
   <img src="/readme-images/uitgeklapt.png" alt="screenshot van de site waar het menu 'klantenservice' is uitgeklapt." width="375px">
+
+  #### winkelmand
+  Om het te laten lijken of er iets in de winkelmand zit, heb ik eerst een bolletje moeten maken waar de gebruiker feedback krijgt van hoeveel er in hun mand zit. Dit heb ik gedaan door bij de html een p element in de a element te zetten met de waarde 0. Dit p element heb ik vervolgens in de css opgemaakt.
+
+  <img src="/readme-images/winkelmand_eerst.png" alt="screenshot van het winkelmand icoon zonder feedback" width="375px">
+  <img src="/readme-images/winkelmand_css.png" alt="screenshot van de css van de opmaak van het p element" width="375px">
+  <img src="/readme-images/winkelmand_g.png" alt="screenshot van het winkelmand icoon met feedback" width="375px">
+
+  Hierna heb ik er een micro interactie van gemaakt met hulp van javascript. Ik heb dit gedaan met behulp van oefening 3 over animaties van codepen. In de javascript roep ik de button aan dat een functie moet uitvoeren als je erop klikt. In de functie haal ik het p element op en zeg ik dat het aantal in het element moet veranderen naar een nieuw aantal (+1).
+
+  <img src="/readme-images/winkelmand_java.png" alt="screenshot van de javascript dat zorgt voor een werkende micro interactie" width="375px">
+  <img src="/readme-images/winkelmand_+1.png" alt="screenshot van het winkelmand icoon na het klikken van de button" width="375px">
+
+  #### Aantal
+  Op de tweede pagina kan de gebruiker kiezen hoeveel van dat product ze in hun winkelmand willen doen. Dit kunnen ze doen via het input element. In de html heb ik input type number toegevoegd. Dit is een speciaal input veld voor nummers. Omdat je niet een negatief getal kan toevoegen aan je winkelmand heb ik een minimum waarde toegevoegd. Ook heb ik een value toegevoegd dat als standaard waarde dient.
+
+  <img src="/readme-images/input_number_code.png" alt="screenshot van de code waar de instellingen voor de input staan weergegeven" width="375px">
+  <img src="/readme-images/input_number.png" alt="sreenshot van de een inputveld op de site" width="375px">
+
+  Hierna ben ik bezig geweest met de opmaak van het veld. In de html heb ik twee plaatjes toegevoegd. In de css heb ik voor beide de plaatjes en de input een opmaak toegevoegd. Het is me alleen nog niet gelukt om de pijltjes in het veld weg te halen.
+
+  <img src="/readme-images/input_nummer_css.png" alt="screenshot van de css code met de opmaak voor de plaatjes en het input veld" width="375px">
+  <img src="/readme-images/input_arrows.png" alt="screenshot van het input veld op de website" width="375px">
+
+
+  #### responsive cadeaufolder
+  Wanneer het scherm groter wordt, moet bij de cadeaufolder de afbeelding naast de tekst en de tekst onder elkaar. Dit wilde ik doen met een grid en gebruikte daarvoor grid-area. Ik snapte niet zo goed waarom het niet werkte.
+
+  <img src="/readme-images/media_folder_css.png" alt="screenshot van de css code waar ik grid area gebruik" width="375px">
+  <img src="/readme-images/media_folder.png" alt="screenshot van de elementen die over elkaar heen staan" width="375px">
+
 
 
   ### Agenda voor meeting
@@ -375,18 +418,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Vermeld de bronnen ook in je code.
 
   1. https://css-tricks.com/almanac/properties/f/flex-direction/ over flex-direction
-  2. https://stackoverflow.com/questions/63179896/displaying-an-image-in-search-bar-html over image in form
+  2. https://stackoverflow.com/questions/63179896/displaying-an-image-in-search-bar-html over een image in form
   3. https://mastery.games/post/flexbox-order/ over flex order
-  4. https://css-tricks.com/snippets/css/complete-guide-grid/ over centreren in grid fraction
+  4. https://css-tricks.com/snippets/css/complete-guide-grid/ over centreren in grid fractions
   5. https://css-tricks.com/almanac/properties/z/z-index/ over z-index
   6. https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp over scrollende list
   7. https://developer.mozilla.org/en-US/docs/Web/CSS/white-space over whitespace
   8. https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-template-areas over grid 'schetsen'
   9. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations over animaties
   10. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary over uitklapbaar menu
-  11. https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset over texdecoration lijn
-  12. https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image over list style foto
-  13. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table over tabel
+  11. https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset over texdecoration underline
+  12. https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image over list style bullets als foto
+  13. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table over tabellen
   14. https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse over tabel border
+  15. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number over input number
+  16. https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp over input arrows
+  17. https://codepen.io/shooft/pen/rNdoWQZ?editors=0110 over winkelwagen micro interactie
+  18. https://youtu.be/2KL-z9A56SQ?si=5QAPYaqmd8Hc6Fvz over media queries
 
 </details>
