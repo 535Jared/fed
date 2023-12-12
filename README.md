@@ -355,6 +355,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="/readme-images/media_folder.png" alt="screenshot van de elementen die over elkaar heen staan" width="375px">
 
 
+  #### plaatje veranderen met java
+  Ik wilde graag een image veranderen als een details element werd geopend. Dit probeerde ik met javascript en een bron. Helaas werkte dit niet voor mij en bleef het plaatje hetzelfde.
+
+  <img src="/readme-images/plaatje_verander.png" alt="screenshot van javascript waarmee ik een plaatje probeerde te veranderen" width="375px">
+
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -389,19 +395,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/result.pdf" width="375px" alt="uitomst scherm 1">
+  <img src="readme-images/result2.pdf" width="375px" alt="uitomst scherm 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb bij dit vak geleerd hoe je een grid kan gebruiken voor de opmaak van je site. Ook heb ik geleerd dat je een site responsive kan maken door middel van media queries.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/cadeauzoeker_icon_code.png" width="375px" alt="screenshot van gebrik van grid in de css">
+  <img src="readme-images/mediaq.png" alt="screenschot van een media query" width="375px">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  De site volledig responsive maken is mij niet gelukt. Ook is het mij niet gelukt om de input number te koppelen aan de micro interactie en is het me niet gelukt om de plaatjes naast de input klikbaar te maken. Ook is het me niet gelukt om een plaatje te veranderen door middel van java script.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+
+  <img src="/readme-images/media_folder.png" alt="screenshot van de elementen die over elkaar heen staan" width="375px">
+  <img src="/readme-images/input_nummer_css.png" alt="screenshot van de css code met de opmaak voor de plaatjes en het input veld" width="375px">
+  <img src="/readme-images/plaatje_verander.png" alt="screenshot van javascript waarmee ik een plaatje probeerde te veranderen" width="375px">
 </details>
 
 
@@ -435,5 +446,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   16. https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp over input arrows
   17. https://codepen.io/shooft/pen/rNdoWQZ?editors=0110 over winkelwagen micro interactie
   18. https://youtu.be/2KL-z9A56SQ?si=5QAPYaqmd8Hc6Fvz over media queries
+  19. https://www.shecodes.io/athena/15247-how-to-change-the-src-in-img-after-clicking-button-with-addeventlistener over plaatje veranderen met javascript
 
 </details>
