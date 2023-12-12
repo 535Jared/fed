@@ -395,8 +395,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/result.pdf" width="375px" alt="uitomst scherm 1">
-  <img src="readme-images/result2.pdf" width="375px" alt="uitomst scherm 2">
+  <a href="readme-images/result.pdf">
+  <a href="readme-images/result2.pdf">
 
 
   ### Dit ging goed/Heb ik geleerd: 
