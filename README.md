@@ -243,7 +243,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 3 (week 4)
 
-<details open>
+<details>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -396,7 +396,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je uitkomst - karakteristiek screenshots:
   <a href="readme-images/result.pdf">Pdf van de home pagina</a>
-  
+
   <a href="readme-images/result2.pdf">Pdf van de tweede pagina</a>
 
 
