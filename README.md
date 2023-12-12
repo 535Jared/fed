@@ -89,11 +89,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de footer: 
   <img src="readme-images/breakdown/breakdownschets_home_footer.jpg" width="375px" alt="breakdown van de footer van de pagina">
 
-  ### dynamisch deel (bijv menu): <!-- deze nog doen --> 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### dynamisch deel (bijv menu):
+  <img src="readme-images/breakdown/breakdownschets_nav.jpg" width="375px" alt="breakdown van het menu">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### de tweede pagina: 
+  <img src="readme-images/breakdown/breakdownschets_2e_p.jpg" width="375px" alt="breakdown van de gehele tweede pagina">
 
 </details>
 
@@ -126,12 +126,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Jared                                                           | student 2          | student 3    | student 4        |
-  | ---                                                             | ---                | ---          | ---              |
-  | Kan een afbeelding in een form?                                 | ...                | ...          |                  |
-  | Kan ik het doorklikken in het menu ook met een transitie doen?  | ...                | ...          | ...              |
-  | Hoe kan ik deze afbeeldingen van de site halen?                 | ...                | ...          | ...              |
-  | Het geanimeerde in de header, is dat met een list?              | ...                | ...          | ...              |
+  | Jared                                                                                       | student 2          | student 3    | student 4        |
+  | ---                                                                                         | ---                | ---          | ---              |
+  | Kan een afbeelding in een form?                                                             | ...                | ...          |                  |
+  | Kan ik het doorklikken in het menu ook met een transitie doen?                              | ...                | ...          | ...              |
+  | Hoe kan ik deze afbeeldingen van de site halen?                                             | ...                | ...          | ...              |
+  | Het geanimeerde in de header, is dat met een list?                                          | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
@@ -216,6 +216,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  * De HTML code geeft nu maar éen error (verbetering)
+  * Ik ben vergeten een H1 te gerbuiken
+  * Voor buttons heb ik het button element gebruikt (verbetering)
+  * 
+  <!-- * Kan de text grootte niet aanpassen.
+  * De inlog knop wordt door de screenreeder niet erkend. -->
+
 </details>
 
 
@@ -228,54 +235,104 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
+
+  #### Cadeaufolder
   Het opmaken van de cadeaufolder sectie ging erg goed. Ik heb flex en order gerbuikt om de afbeelding bovenaan te zetten. Verder heb ik vooral gebruik gemaakt van padding, font-size en font-family om de sectie op te maken.
 
   <img src="/readme-images/cadeaufolder_g.png" alt="Een screenshot van de website van een iPhone mockup met tekst en een knop" width="375px">
   <img src="/readme-images/cadeaufolder_code.png" alt="Een screenshot van de code van de opmaak voor de sectie van de cadeaufolder" width="375px">
 
+  #### Iconen boven aan de pagina
   De iconen boven aan de pagina wilden nu wel naast elkaar staan, maar de ruimte ertussen verschilde. Ik heb dit probleem proberen op te lossen met justify-content, img padding en width maar geen van deze werkte. Uiteindelijk heb ik niet zo moeilijk gedacht en heb ik text-align center geprobeerd wat werkte.
 
   <img src="/readme-images/topnavfout.png" alt="screenshot van iconen die naast elkaar staan met ongelijke witruimte ertussen" width="375px">
   <img src="/readme-images/topnavcode.png" alt="screenshot van de code text-align center" width="375px">
   <img src="/readme-images/topnavgoed.png" alt="screenshot van iconen die naast elkaar staan met gelijke witruimte ertussen" width="375px">
 
+  #### Geanimeerde lijst
   De lijst onder in mijn header moest als uitgestrekte regels naast elkaar staan. Dit wilde ik doen doormiddel van flex en felx-direction. Wanneer ik dit deed kwamen de list items wel naast elkaar te staan, maar de regels waren niet uitgestrekt. Demi zei dat ik dit kon proberen op te lossen met overflow scroll en evt. white-space nowrap dus heb ik dit geprobeerd. Om ze dan naast elkaar te krijgen heb ik gebruik gemaakt van een inline-block dat ervoor zorgt dat de list items niet zomaar meer verticale ruimte innemen.
 
   <img src="/readme-images/list_header.png" alt="screenshot van list items naast elkaar gepropt" width="375px">
   <img src="/readme-images/list_header_c.png" alt="screenshot van de code overflow, white-space en inline-block" width="375px">
   <img src="/readme-images/list_header_g.png" alt="screenshot van list items gestrekt naast elkaar" width="375px">
 
+  De lijst heb ik geanimeerd in de css met behulp van Mozilla. Door de animation iteration op infinity te zetten, blijft de animatie zich constant afspelen. Met keyframes heb aangegeven waar de elementen heen moeten animeren. In mijn geval moest de animatie constant naar links verplaatsen. Dit gebeurde echter niet. De animatie scrolde aan het einde weer terug naar rechts om bij het begin te komen. Dit kwam omdat ik de eindpositie van de animatie weer op 0 had gezet. Dus heb ik deze veranderd en ik heb de animation fill mode naar forward gezet. Hierdoor zou de animatie constant voorwaards moeten gaan.
+
+  <img src="/readme-images/animatie_eerst.png" alt="screenshot van de code waar ik de eind positie op 0 is" width="375px">
+  <img src="/readme-images/animatie_juist.png" alt="screenshot van de code waar animation fill mode foreward is gebruikt en de animatie niet een eindpositie van 0 heeft" width="375px">
+
+  Nu deed de animatie het goed alleen moest ik er nog voor zorgen dat hij een aantal seconde still bleef staan. Dit heb ik gedaan door de animatie een duur te geven van 20 secondes en de positie tussen 30 procent hetzelfde te houden. Hierdoor blijft de animatie dus een aantal seconde stil staan voor een aantal secondes.
+
+  <img src="/readme-images/animatie_met_pauze.png" alt="screenshot van de code waar ik de positie om de 30 procent gelijk houdt" width="375px"> 
+
+  #### Icon naast tekst
   Bij de cadeauzoeker wilde ik het icoontje van het vergrootglas naast de header zetten door middel van een grid. Op CSS tricks zag ik dat hier een manier voor was door de grid een soort van te schetsen. Hiervoor gaf ik eerst met grid-area elk onderdeel wat in de grid zit een eigen naam. Vervolgens heb ik in de sectie waar ik de grid heb geplaatst grid-template-areas gebruikt om de grid te 'schetsen'. Ik gaf een rij aan met aanhalingstekens en in elke column zette ik de naam van het element dat ik daar wilde hebben.
 
   <img src="/readme-images/cadeauzoeker _icon_fout.png" alt="screenshot van vergrootglas icon dat onder de header staat" width="375px">
   <img src="/readme-images/cadeauzoeker_icon_code.png" alt="screenshot van code waar ik grid-area gebruik" width="375px">
   <img src="/readme-images/cadeauzoeker_icon_goed.png" alt="screenshot van vergrootglas icon dat naast de header staat" width="375px">
 
+  #### Z-index
   Omdat ik position absolute heb gebruikt om tekst over plaatjes te krijgen, bleef deze tekst ook zichtbaar als ik mijn menu open klapte. Om dit op te lossen heb ik gebruik gemaakt van de z-index. Hiermee zeg ik op welke layer mijn element moet zijn. Door het menu een z-index van één te geven, zeg ik dus dat het menu boven alle andere elementen zichtbaar moet zijn.
 
   <img src="/readme-images/z_index.png" alt="screenshot van tekst op het uitgeklapte menu" width="375px">
   <img src="/readme-images/z_index_code.png" alt="screenshot van de z-index code in css" width="375px">
 
-  <img src="" alt="" width="375px">
+  #### Margin-left
+  In mijn menu wilde graag de iconen naast de tekst helemaal aan de rechter kant hebben. Dit probeerde ik door gebruikk te maken van justify-content en text-align. Dit werkte niet dus moest ik een andere manier gebruiken. Eerder in de les hadden we een soort gelijk probleem behandeld en deze hadden we opgelost door gebruik te maken van margin auto. Margin auto geeft een zo veel mogelijke margin aan een element. In mijn geval heb ik margin-left gebruikt omdat ik mijn iconen aan de rechterkant wilde hebben.
+
+  <img src="/readme-images/nav_pijl_fout.png" alt="screenshot van het menu waar het icoontje tegen de tekst aan zit" width="375px">
+  <img src="/readme-images/nav_pijl_f_code.png" alt="screenshot van de code waar ik justify-content flex-end gebruik" width="375px">
+  <img src="/readme-images/nav_pijl_g.png" alt="screenshot van ht menu waar het icoontje aan de rechterkant van het scherm staat" width="375px">
+  <img src="/readme-images/nav_pijl_g_code.png" alt="screenshot van de code waar margin-left auto wordt gebruikt" width="375px">
+
+  #### Image in gridd
+  In de footer van mijn pagina heb ik bij de sectie 'kunnen we helpen' gebruik gemaakt van een grid om de plaatjes naast de tekst te krijgen. Dit lukte alleen de plaatjes zaten tegen de rand van het scherm aan. Dit heb ik makkelijk kunnen oplossen door gebruik te maken van justify-self center.
+
+  <img src="/readme-images/helpen_icons_f.png" alt="screenshot van plaatjes die tegen de rand van de pagina zitten" width="375px">
+  <img src="/readme-images/helpen_icons_g.png" alt="screenshot van de plaatjes die meer van de kant af zitten" width="375px">
+  <img src="/readme-images/helpen_icons_code.png" alt="screenshot van de code waar justify-self center wordt gebruikt" width="375px">
+
+  #### Screenreader
+  Ik ben mijn site gaan testen met een screenreader, dit ging vooral goed het enige probleem is dat de screenreader ook de elementen uit het menu voor las ookal was deze gesloten. Dit heb ik kunnen op lossen door area-hidden te gebruiken. In javascript heb ik dan door middel van een queryselector deze aan of uit laten zetten.
+
+  <img src="/readme-images/menu_voice_html.png" alt="screenshot van de html waar ik area-hidden heb gebruikt" width="375px">
+  <img src="/readme-images/java_menu_voice.png" alt="screenshot van de code in javascript waar ik met een function area-hidden op true of false zet" width="375px">
+
+  #### Uitklapbaar menu
+  In de footer van mijn site heb ik een uitklapbaar menu gemaakt. Hier wilde ik net als eerder de iconen aan de rechterkant van het scherm en de tekst links. Dit probeerde ik te doen met align-items maar dit werkte niet. Dus ik heb gedaan wat ik eerder ook al heb gedaan en gebruikt gemaakt van margin-left auto en justify-content flex-start. Met margin auto zorgde ik ervoor dat er automatisch zo veel mogelijk ruimte tussen de elementen zit. Met flex-start zorgde ik ervoor dat de tekst aan de linker kant bleef staan.
+
+  <img src="/readme-images/pijltje_fout.png" alt="screenshot waar de icoontjes links tegen de teskt aan staan" width="375px">
+  <img src="/readme-images/pijltje_code_fout.png" alt="screenshot van de code waar align items wordt gebruikt" width="375px">
+  <img src="/readme-images/pijltje_goed.png" alt="screenshot waar de icoontjes rechts staan en de tekst links staat.t" width="375px">
+  <img src="/readme-images/pijltje_code_goed.png" alt="screenshot van de code waar justify content en margin auto wordt gebruikt" width="375px">
+
+  Om het menu dan ook daadwerkelijk uitklapbaar te maken heb ik details en summery. In de detail heb ik per menu de bijbehoorende content gezet en in de summery de heb ik neergezet wat er op het menu moest komen te staan.
+
+  <img src="/readme-images/uitklap_g.png" alt="screenshot van de html waar details en summery wordt gebruikt" width="375px"> 
+  <img src="/readme-images/uitgeklapt.png" alt="screenshot van de site waar het menu 'klantenservice' is uitgeklapt." width="375px">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Jared                                                                                       | student 2          | student 3    | student 4        |
+  | ---                                                                                         | ---                | ---          | ---              |
+  | De fonts doen het niet als ik mijn site open vanuit github                                  | ...                | ...          |                  |
+  | Hoe krijg ik in het menu de pijltjes helemaal rechts?                                       | ...                | ...          | ...              |
+  | Kan ik niet liever een andere tweede pagina doen?                                           | ...                | ...          | ...              |
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - De eerste pagina is zo goed als af!
+  - De font in github doet het niet omdat ik bij de src niet puntjes voor de slash zette.
+  - In het menu kun je margin-left auto gebruiken in plaats van justify content.
+  - Het selecteren van de prijs op de tweede pagina kan lastig zijn want het wordt al snel ingewikkeld. Je zou eventueel een iets makkelijkere pagina kunnen doen.
+  - Micro animaties en responsiveness moet nog gedaan worden.
+  - Verslag wordt goed bijgehouden.
 
 </details>
 
@@ -327,5 +384,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   8. https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-template-areas over grid 'schetsen'
   9. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations over animaties
   10. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary over uitklapbaar menu
+  11. https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset over texdecoration lijn
+  12. https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-image over list style foto
+  13. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table over tabel
+  14. https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse over tabel border
 
 </details>
