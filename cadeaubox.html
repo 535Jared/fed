@@ -8,7 +8,7 @@
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Cadeaubox</title>
+	<title>Wonderbox</title>
 	
 	<link href="styles/product.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
@@ -28,7 +28,7 @@
 				<a href="#"><img src="images/icons/account_icon.svg" alt="">Inloggen</a>
 			</li>
 			<li>
-				<a href="#"><img src="images/icons/winkelmand_icon.svg" alt="">Winkelmand</a>
+				<a href="#"><img src="images/icons/winkelmand_icon.svg" alt="">Winkelmand<p>0</p></a>
 			</li>
 
 			<button aria-hidden="false">
@@ -92,38 +92,113 @@
 
     <main>
 
-        <a href="index.html">Home</a>
-        <img src="/images/icons/pijltje_blauw_icon.svg" alt="">
-        <a href="#">HOE JE ER BENT GEKOMEN</a>
-        <img src="/images/icons/pijltje_blauw_icon.svg" alt="">
-        <p>Cadeaubox Primera Keuze Cadeaukaart met Tony's Chocolonely</p>
+		<article>
+			<a href="index.html">Home</a>
+			<img src="images/icons/pijltje_blauw_icon.svg" alt="">
+			<a href="#">Cadeaukaarten</a>
+			<img src="images/icons/pijltje_blauw_icon.svg" alt="">
+			<p>Wonderbox Duizend & een droomnachten</p>
+		</article>
 
-        <img src="" alt="">
-        <img src="" alt="">
+		<ol>
+			<li>
+				<img src="images/wonderbox_1.jpg" alt="Wonderbox 1001 droomnachten cadeau tegoed">
+			</li>
+			<li>
+				<img src="images/kaart.jpeg" alt="Kaart van Eurpa waar de wonderbox gebruikt kan worden">
+			</li>
+			<li>
+				<img src="images/hotel.jpeg" alt="Foto van een bed in een hotelkamer">
+			</li>
+			<li>
+				<img src="images/zo_werkt_het.jpeg" alt="Foto met uitleg over hoe Wonderbox werkt">
+			</li>
+		</ol>	
 
         <section>
-            <h1>Cadeaubox Primera Keuze Cadeaukaart met Tony's Chocolonely</h1>
+            <h1>Wonderbox Duizend & een droomnachten</h1>
             <a href="#">Zakelijk bestellen</a>
-            <p>Vanaf:<p>
-            <p>5,-</p>
+            
+			<p>119,90</p>
 
-            <img src="" alt="">
+            <img src="images/icons/groen_vinkje.png" alt="">
+
             <p>Voor 16:00 uur besteld, donderdag in huis</p>
-            <img src="" alt="">
+
+            <img src="images/icons/groen_info.svg" alt="">
         </section>
 
-        <!-- <section>   PRIJSKEUZE  </section> -->
+        <section>   
+			<h2>Aantal</h2>
+			<img src="images/icons/min.svg">
+			<input type="number" min="0" value="1"> <!-- Met hulp van https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number -->
+			<img src="images/icons/plus.svg">
+		</section>
+
 
         <article>
-            <p>Totaal:</p>
-            <p>5,-</p> <!-- micro interactie -->
-            <button aria-hidden="false">
-                <!-- micro interactie -->
-                Toevoegen aan winkelmand
-                <img src="/images/icons/pijltje_blauw_icon.svg" alt="">
-            </button>
-            <p>Primera Keuze Cadeaukaart inwisselen? Dat kan in de betaalstap.</p>
-        </article>
+			<button aria-hidden="false">
+				Toevoegen aan winkelmand
+				<img src="images/icons/pijltje_blauw_icon.svg" alt="">
+			</button>
+
+			<button aria-hidden="false">
+				Bekijk winkelvoorraad
+			</button>
+		</article>
+
+		<section>
+			<h2>Primera Keuze Cadeaukaart inwisselen?</h2>
+			<h3>Dat kan in de betaalstap.</h3>
+		</section>
+
+		<button>
+			<img src="images/icons/hartje.png" alt="">
+			Zet op verlanglijst
+		</button>
+
+		<article>
+			<ul>
+				<li>Voeg een kaartje en persoonlijke boodschap toe</li>
+				<li>Ook verkrijgbaar in meer dan 530 Primera winkels</li>
+			</ul>
+		</article>
+
+		<details open>
+			<summary>Omschrijving <img src="images/icons/open.png" alt=""></summary>
+			<p>Geniet samen van een overnachting waar je altijd al van gedroomd hebt! 
+				Duizend & één Droomnachten van Wonderbox biedt je een ruime keuze aan 
+				overnachtingen. Kies uit 4-sterrenhotels, kastelen, wellnessresorts en 
+				andere unieke overnachtingslocaties. Ook wellnesshotels en overnachtingen 
+				inclusief diner behoren tot de mogelijkheden.</p>
+		</details>
+		<details>
+			<summary>Productspecificaties <img src="images/icons/dicht.png" alt=""></summary>
+			<table> <!-- Met hulp van https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table -->
+				<tr>
+					<th>Assortiment</th>
+					<td>Cadeaukaarten</td>
+				</tr>
+				<tr>
+					<th>Voor wie is het?</th>
+					<td>Man, Vrouw</td>
+				</tr>
+				<tr>
+					<th>Geefmoment</th>
+					<td>Afscheidscadeau, Bedankt, Beterschap, Geboorte, Gefeliciteerd, 
+						Geslaagd, Huwelijk, Jubileum, Romantisch, Verjaardag, Verjaardagscadeau 
+						man, Verjaardagscadeau vrouw, Voor haar, Voor hem</td>
+				</tr>
+				<tr>
+					<th>Merk</th>
+					<td>Wonderbox</td>
+				</tr>
+				<tr>
+					<th>Verzendmethode</th>
+					<td>Per post</td>
+				</tr>
+			</table>
+		</details>
 
 
 
