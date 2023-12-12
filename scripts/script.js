@@ -43,7 +43,7 @@ function addToShoppingCart() {
 }
 
 
-// foto verandering
+// foto verandering https://www.shecodes.io/athena/15247-how-to-change-the-src-in-img-after-clicking-button-with-addeventlistener
 
 // const imgPijltje = document.querySelector("main summary img");
 // const summary = document.querySelector("main summary");
